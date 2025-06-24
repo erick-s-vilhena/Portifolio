@@ -1,0 +1,40 @@
+.logo{
+    display: flex;
+    position: relative;
+    line-height: 26px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    user-select: none;
+    overflow: hidden;
+    cursor: pointer;
+    //background-color: rgba(0, 255, 255, 0.232);
+
+    .menor{
+        color: var(--cor-prima);
+        z-index: 20;
+    }
+
+    .esv{
+        position: relative;
+        transition: all 0.5s;
+        top: 0;
+        z-index: 10;
+        width: 52px;
+        color: var(--cor-titulo);
+        text-decoration: none;
+
+        &.sumir{
+            filter: opacity(0);
+            top: -50px;
+            animation: sumir 0.2s linear forwards;
+            animation-delay: 0.2s;
+
+            @keyframes sumir {
+                100%{
+                    width: 0;
+                }
+            }
+        }
+    }
+}
