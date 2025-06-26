@@ -59,9 +59,10 @@
                                 filter: opacity(1);
                               }
                         }
-    
-                        animation: sugir $tempo forwards;
-                        animation-delay: $delay;
+                        &{
+                            animation: sugir $tempo forwards;
+                            animation-delay: $delay;
+                        }
                     }
 
                     a{  
@@ -211,7 +212,9 @@
                               50% { transform: scale($escala); }
                               55% { transform: scale(1); }
                             }
-                            animation: pulsar $duracao infinite;
+                            &{
+                                animation: pulsar $duracao infinite;
+                            }
                         }
 
                         &.um{
