@@ -18,7 +18,7 @@ function App() {
               <MenuLateral/>
             </main>
 
-          </HabilidadeContextProvider>
+          </HabilidadeContextProvider> 
         </SectionContextProvider>
      </div>
   )
