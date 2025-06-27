@@ -24,7 +24,7 @@
             &:nth-child(#{$i}){
 
                 animation: cor 50s infinite linear;
-                animation-delay: (1s + $i) / 6;
+                animation-delay: calc((1s * $i) / 6);
             }
         }
 

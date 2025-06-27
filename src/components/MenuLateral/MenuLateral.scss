@@ -44,9 +44,10 @@
                         filter: opacity(1);
                     }
                 }
-
-                animation: sugir_slide $tempo forwards;
-                animation-delay: $delay;
+                &{
+                    animation: sugir_slide $tempo forwards;
+                    animation-delay: $delay;
+                }
             }
 
             @for $i from 0 through 5 {

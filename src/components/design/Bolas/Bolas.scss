@@ -20,7 +20,7 @@
         @for $i from 1 through 6{
             &:nth-child(#{$i}){
                 animation: pulo 3s infinite linear;
-                animation-delay: (1s * $i) / 4;
+                animation-delay: calc((1s * $i) / 4);
             }
         }
 
